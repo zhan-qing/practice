@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Baloo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baloo'), local('Baloo-Regular'), url(https://fonts.gstatic.com/s/baloo/v1/RFm9MaodarSezi9FSqQmfw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'), url(https://fonts.gstatic.com/s/cuprum/v8/rZj40-VH1f1Wt0yg6Fkbcw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.navbar-brand{  
+    font-family: 'Baloo',cursive;
+    font-size: 25px;
+}
+.navbar-nav{
+    font-family: 'Cuprum',cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.jumbotron{
+    overflow: hidden;
+}
+.jumbotron h1, h2{
+    display: inline-block;
+    font-family: 微軟正黑體;
+    margin-bottom: 20px;
+}
+
+.btn-default{
+    background: #e6e6e6;
+    font-family: 'Baloo';
+    font-size: 20px;
+    box-shadow: none;
+}
+.learn-more{
+    margin-top: 10%;
+}
+p{
+    font-family: 微軟正黑體;
+}
+.ICON{
+    display: block;
+    margin: 0 auto;
+}
