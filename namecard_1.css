@@ -88,6 +88,13 @@ hr{
     width: 500px;
     opacity: 0.5;
 }
+.topic {
+    text-align: center;
+    font-family: 微軟正黑體;
+    color: lightslategrey;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 /*div {
     border:1px sloid red;
 }*/

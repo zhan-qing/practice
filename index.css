@@ -21,8 +21,12 @@
     font-size: 18px;
     letter-spacing: 1px;
 }
+#jumb{
+    padding-top: 40px;
+}
 .jumbotron{
     overflow: hidden;
+    line-height: 35px;
 }
 .jumbotron h1, h2{
     display: inline-block;
@@ -32,17 +36,39 @@
 
 .btn-default{
     background: #e6e6e6;
-    font-family: 'Baloo';
+    font-family: 'Cuprum';
     font-size: 20px;
     box-shadow: none;
-}
-.learn-more{
-    margin-top: 10%;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
 }
 p{
     font-family: 微軟正黑體;
+    font-weight: bold;
 }
 .ICON{
     display: block;
     margin: 0 auto;
+}
+.modal-dialog{
+    width: 50%;
+    /*overflow: scroll;*/
+}
+.modal-body img{
+    width:100%;
+}
+.collection{
+    height: 350px;
+    text-align: center;
+}
+.collection img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 100%;
+    max-width: 100%;
+}
+#collections{
+    padding-top:30px;
 }

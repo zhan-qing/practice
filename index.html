@@ -16,10 +16,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--this is personal settings-->
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 
     <title>ZQ Liang</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#scroll-spy">
 <!--These are navbar settings-->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -31,16 +32,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">ABOUT ZQ LIANG</a>
+      <a class="navbar-brand" href="#home">ABOUT ZQ LIANG</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Personal Resume</a></li>
-        <li><a href="#">Works Collection</a></li>
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">App Design</a></li>
+        <li><a href="#cv">Personal Resume</a></li>
+        <li><a href="#collections" data-taget="#collections" id="worklink">Works Collection</a></li>
+        <li><a href="#web">Web Design</a></li>
+        <li><a href="#app">App Design</a></li>
         
         <li class="dropdown">
           <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> MENU <span class="caret"></span></a>
@@ -59,21 +60,134 @@
   </div><!-- /.container-fluid -->
 </nav>
 <!--these are the body components-->
-<div class="container">
+<div class="container" id="jumb">
     <div class="jumbotron">
         <div class="row">
             <div class="col-md-9 col-xs-12">        
                 <h1>梁占青</h1>
                 <h2>Zhan-qing Liang</h2>
                 <p>來自台中，現居台北。<br>
-                目前就讀國立台灣大學經濟學系三年級，擅長與人溝通、繪圖、UI/UX設計。</p>
-                <p><a class="btn btn-default learn-more" href="#" role="button">Learn more</a></p>
+                就讀國立台灣大學 經濟學系三年級，擅長繪圖、網站UI/UX設計、行銷。<br>
+                曾任第五十四屆 文化局獨立表演團體 台大合唱團 團長。<br>
+                專長工具：Photoshop CS6, Adobe illustrator, SAI etc.
+                </p>
+                <a href="#" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="More details about me.">LEARN MORE</a>
             </div>
             <div class="col-md-3 col-xs-12"> 
-                <img src="ICON.png" alt="" class="ICON img-thumbnail">
+                <img src="image/ICON.png" alt="" class="ICON img-thumbnail" data-toggle="tooltip" data-placement="top" title="My personal icon.">
             </div>
         </div>
     </div>
+    <div class="row" id="cv"></div>
+    <div class="row" id="collections">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="collection"><img src="image/NTUinvi.jpg" alt="..."></div>
+                <div class="caption">
+                    <h3>台大外文系委託邀請卡設計</h3>
+                    <p>台大外文系謝師宴對外邀請函設計，因同學推薦而獲得機會設計並且規劃印刷流程。</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#NTUinvi">查看原圖</a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="NTUinvi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">台大外文系委託邀請卡設計(工具: Photoshop CS6)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="image/NTUinvi.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="collection"><img src="image/collection-3.jpg" alt="..."></div>
+                <div class="caption">
+                    <h3>電繪人物架構與配色設計</h3>
+                    <p>教學電繪自己繪製並且使用的範例教材，講解基本的人物構圖與配色觀念。</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#collection-3">查看原圖</a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="collection-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">電繪人物架構與配色設計(工具: illustrator)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="image/collection-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="collection"><img src="image/sketch.jpg" alt="..."></div>
+                <div class="caption">
+                    <h3>簡易素描作品</h3>
+                    <p>大衛石膏像，<br>素描種類接近速寫，屬於半成品。</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#sketch">查看原圖</a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="sketch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">簡易素描作品(工具: 2B鉛筆與軟橡皮)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="image/sketch.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="collection"><img src="image/work-1.jpg" alt="..."></div>
+                <div class="caption">
+                    <h3>二創明信片與印製</h3>
+                    <p>此為二創作品，構思設計、繪圖、排版以及選紙到印刷皆一人完成，於CWT上擺攤販售。</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#work-1">查看原圖</a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="work-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">二創明信片與印製(工具: Photoshop CS6 與 SAI)</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="image/work-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="row" id="web"></div>
+    <div class="row" id="app"></div>
+    
 </div><!-- /.container-->
 </body>
 </html>
