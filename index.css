@@ -51,13 +51,7 @@ p{
     display: block;
     margin: 0 auto;
 }
-.modal-dialog{
-    width: 50%;
-    /*overflow: scroll;*/
-}
-.modal-body img{
-    width:100%;
-}
+
 .collection{
     height: 350px;
     text-align: center;
@@ -68,7 +62,20 @@ p{
     transform: translateY(-50%);
     max-height: 100%;
     max-width: 100%;
+    border-radius: 6px;
 }
 #collections{
     padding-top:30px;
+}
+.modal{
+    text-align: center;
+}
+.modal-dialog{
+    width: auto;
+    display: inline-block;
+}
+.works-title{
+    padding-left: 6px;
+    font-family: 'Cuprum';
+    letter-spacing: 1px;
 }

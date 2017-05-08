@@ -1,9 +1,8 @@
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-  $('#NTUinvi').modal('fast');
-  $('#collection-3').modal('fast');
-  $('#sketch').modal('fast');
-  $('#worklink').scrollspy({target: '#collections'});
- 
+  $('#worklink').click(function(){
+    var HeightCol = $('#collections').offset().top;
+    $('body').animate( {scrollTop: HeightCol}, 500);
+  })
+
 });
 
