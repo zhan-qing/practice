@@ -7,5 +7,9 @@ $(function () {
     var Height = $('#web').offset().top;
     $('body').animate({scrollTop: Height}, 500);
   })
+  $('#applink').click(function(){
+    var Height = $('#app').offset().top;
+    $('body').animate({scrollTop: Height}, 500);
+  })
 });
 
