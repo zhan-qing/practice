@@ -79,3 +79,24 @@ p{
     font-family: 'Cuprum';
     letter-spacing: 1px;
 }
+.scrolltotop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: rgba(51, 51, 51, 0.2); 
+    text-align: center;
+    font-size: 40px;
+    padding: auto;
+    display: none;
+}
+.topsign{
+    position: relative;
+    display: inline-block;
+    top: 13px;
+    right: -2px;
+    width: 40px;
+    
+}
